@@ -1,0 +1,42 @@
+{
+  "name": "generator-wixapp",
+  "version": "0.0.0",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/tautvilas/generator-wixapp",
+  "bugs": "https://github.com/tautvilas/generator-wixapp/issues",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/tautvilas"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tautvilas/generator-wixapp.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "generator-angular": "~0.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0",
+    "generator-angular": "~0.6.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
