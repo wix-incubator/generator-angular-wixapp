@@ -1,12 +1,12 @@
 {
-  "name": "generator-wixapp",
+  "name": "generator-angular-wixapp",
   "version": "0.0.0",
   "description": "A generator for Yeoman",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/tautvilas/generator-wixapp",
-  "bugs": "https://github.com/tautvilas/generator-wixapp/issues",
+  "homepage": "https://github.com/tautvilas/generator-angular-wixapp",
+  "bugs": "https://github.com/tautvilas/generator-angular-wixapp/issues",
   "author": {
     "name": "",
     "email": "",
@@ -15,7 +15,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tautvilas/generator-wixapp.git"
+    "url": "git://github.com/tautvilas/generator-angular-wixapp.git"
   },
   "scripts": {
     "test": "mocha"

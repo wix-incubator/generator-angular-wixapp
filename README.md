@@ -1,4 +1,4 @@
-# generator-wixapp [![Build Status](https://secure.travis-ci.org/tautvilas/generator-wixapp.png?branch=master)](https://travis-ci.org/tautvilas/generator-wixapp)
+# generator-angular-wixapp [![Build Status](https://secure.travis-ci.org/tautvilas/generator-angular-wixapp.png?branch=master)](https://travis-ci.org/tautvilas/generator-angular-wixapp)
 
 A generator for [Yeoman](http://yeoman.io).
 
@@ -23,10 +23,10 @@ $ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-wixapp from npm, run:
+To install generator-angular-wixapp from npm, run:
 
 ```
-$ npm install -g generator-wixapp
+$ npm install -g generator-angular-wixapp
 ```
 
 Finally, initiate the generator:
