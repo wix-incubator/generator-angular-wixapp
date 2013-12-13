@@ -32,7 +32,7 @@ $ npm install -g generator-angular-wixapp
 Finally, initiate the generator:
 
 ```
-$ yo wixapp
+$ yo angular-wixapp
 ```
 
 ### Getting To Know Yeoman
