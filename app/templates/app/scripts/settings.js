@@ -16,7 +16,7 @@ angular.module('appSettings', [
       });
 
     $translateProvider.useStaticFilesLoader({
-      prefix: 'translations/donations_',
+      prefix: 'translations/settings_',
       suffix: '.json'
     });
   })
