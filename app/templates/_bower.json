@@ -1,5 +1,6 @@
 {
   "name": "<%= _.slugify(_.humanize(appname)) %>",
+  "appPath": "app",
   "private": true,
   "dependencies": {
     "angular": "~1.2.0",

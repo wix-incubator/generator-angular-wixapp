@@ -22,6 +22,7 @@ WixappGenerator.prototype.app = function () {
   this.mkdir('app/scripts');
   this.mkdir('app/styles');
   this.mkdir('app/views');
+  this.mkdir('app/images');
   this.mkdir('app/translations');
   this.mkdir('app/scripts/controllers');
   this.mkdir('app/scripts/services');
@@ -29,16 +30,24 @@ WixappGenerator.prototype.app = function () {
   this.template('Gruntfile.js', 'Gruntfile.js');
   this.template('_package.json', 'package.json');
   this.template('_bower.json', 'bower.json');
+
   this.copy('jshintrc', '.jshintrc');
   this.copy('gitattributes', '.gitattributes');
   this.copy('bowerrc', '.bowerrc');
+
   this.copy('app/robots.txt');
-  this.copy('app/index.html');
-  this.copy('app/settings.html');
+
   this.copy('app/styles/settings.css');
+
   this.copy('app/scripts/settings.js');
   this.copy('app/scripts/controllers/settings.js');
   this.copy('app/scripts/services/wix.js');
+
   this.copy('app/views/settings.html');
+  this.copy('app/index.html');
+  this.copy('app/settings.html');
+
   this.copy('app/translations/settings_en.json');
+
+  this.copy('app/images/wix_icon.png');
 };
