@@ -20,13 +20,13 @@ angular.module('appSettings', [
       suffix: '.json'
     });
   })
-  .run(['wix', '$translate', function (wix, $translate) {
+  .run(function ($wix, $translate) {
     // Version 1.1.1 of angular-translate has a bug with async
     // loading, last language loaded overrides your selection here. To
     // have predictable behavior we use simple approach with promise
     // value produced by $translate.uses(...) instead of
     // .preferredLanguage() or .fallbackLanguage().
-    var locale = wix.Utils.getLocale();
+    var locale = $wix.Utils.getLocale();
     if (!locale) {
       locale = 'en';
     }
@@ -37,4 +37,4 @@ angular.module('appSettings', [
         // fallback language.
         $translate.uses('en');
       });
-  }]);
+  });

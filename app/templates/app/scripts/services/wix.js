@@ -2,6 +2,6 @@
 
 angular.module('wix', []);
 
-angular.module('wix').factory('wix', function () {
+angular.module('wix').factory('$wix', function () {
   return Wix;
 });
