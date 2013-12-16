@@ -18,9 +18,12 @@ util.inherits(WixappGenerator, yeoman.generators.Base);
 
 WixappGenerator.prototype.app = function () {
   this.mkdir('app');
+  this.mkdir('test');
 
   this.template('Gruntfile.js', 'Gruntfile.js');
   this.template('_package.json', 'package.json');
   this.template('_bower.json', 'bower.json');
   this.copy('jshintrc', '.jshintrc');
+  this.copy('gitattributes', '.gitattributes');
+  this.copy('bowerrc', '.bowerrc');
 };
