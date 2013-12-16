@@ -20,6 +20,7 @@ WixappGenerator.prototype.app = function () {
   this.mkdir('app');
   this.mkdir('test');
   this.mkdir('app/scripts');
+  this.mkdir('app/styles');
   this.mkdir('app/scripts/controllers');
   this.mkdir('app/scripts/services');
 
@@ -32,6 +33,7 @@ WixappGenerator.prototype.app = function () {
   this.copy('app/robots.txt');
   this.copy('app/index.html');
   this.copy('app/settings.html');
+  this.copy('app/styles/settings.css');
   this.copy('app/scripts/settings.js');
   this.copy('app/scripts/controllers/settings.js');
   this.copy('app/scripts/services/wix.js');
