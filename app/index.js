@@ -1,4 +1,5 @@
 'use strict';
+
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
@@ -15,15 +16,11 @@ var WixappGenerator = module.exports = function WixappGenerator(args, options, c
 
 util.inherits(WixappGenerator, yeoman.generators.Base);
 
-WixappGenerator.prototype.app = function app() {
+WixappGenerator.prototype.app = function () {
   this.mkdir('app');
-  this.mkdir('app/templates');
 
+  this.copy('Gruntfile.js', 'Gruntfile.js');
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
-};
-
-WixappGenerator.prototype.projectfiles = function projectfiles() {
-// this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
 };
