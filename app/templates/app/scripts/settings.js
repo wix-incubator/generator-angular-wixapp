@@ -30,11 +30,10 @@ angular.module('appSettings', [
     if (!locale) {
       locale = 'en';
     }
-    $translate.uses(locale)
-      .then(function success () {
+    $translate.uses(locale).then(function success() {
         // translations loaded, nothing to do.
-      }, function error () {
-        // fallback language.
-        $translate.uses('en');
-      });
+    }, function error() {
+      // fallback language.
+      $translate.uses('en');
+    });
   });
