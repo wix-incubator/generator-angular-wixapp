@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('donationsSettings', [
+angular.module('appSettings', [
     'ngRoute'
   ])
   .config(function ($routeProvider) {
