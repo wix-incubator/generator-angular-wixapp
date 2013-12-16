@@ -2,10 +2,12 @@
 
 angular.module('wixApp')
   .controller('MainCtrl', function ($scope, $wix) {
-    $wix.addEventListener($wix.Events.SETTINGS_UPDATED, $scope.handleEvent);
 
     $scope.handleEvent = function(event) {
-      console.log(event);
-      $scope.message = event;
+      $scope.$apply(function() {
+        $scope.message = event;
+      });
     };
+
+    $wix.addEventListener($wix.Events.SETTINGS_UPDATED, $scope.handleEvent);
   });
