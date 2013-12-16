@@ -3,27 +3,21 @@
     <img width="86" src="images/wix_icon.png" alt="logo"/>
   </div>
   <div class="loggedOut">
-    <p>
-      This is a sample Settings view for widgets and pages created with <a href="http://dev.wix.com"
-                                                                           target="_blank">Wix's 3rd Party SDK</a>,
-      compatible with Wix's product requirements.
-      This boilerplate is aimed at saving time for developing the UI of your apps, and let the
-      developer focus on developing logic.
+    <p translate="description">
     </p>
 
     <div class="login-panel">
-      <p class="create-account">Don't have an<br/>account? <strong><a href="#" target="_blank">Create
-        one</a></strong></p>
-      <button class="submit btn connect">Connect account</button>
+      <p class="create-account" translate="create"></p>
+      <button class="submit btn connect">{{'connect' | translate}}</button>
     </div>
   </div>
   <div class="loggedIn hidden">
-    <p>You are now connected to <strong>John Doe (john@doe.com)</strong> account<br/>
-      <a class="disconnect-account">Disconnect account</a></p>
+    <p>{{'connected' | translate:params}}<br/>
+      <a class="disconnect-account">{{'disconnect' | translate}}</a></p>
 
     <div class="premium-panel">
-      <p class="premium-features ">Premium features</p>
-      <button class="submit btn upgrade">Upgrade</button>
+      <p class="premium-features ">{{'premium' | translate}}</p>
+      <button class="submit btn upgrade">{{'upgrade' | translate}}</button>
     </div>
   </div>
 </header>

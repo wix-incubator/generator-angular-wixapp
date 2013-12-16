@@ -1,4 +1,9 @@
 {
-  "title": "App settings panel",
-  "connectedToPayPalText" : "You are now connected to <strong>{{account}}</strong> account."
+  "connect": "Connect account",
+  "disconnect": "Disconnect account",
+  "description": "This is a sample Settings view for widgets and pages created with\n<a href=\"http://dev.wix.com\" target=\"_blank\">Wix's 3rd Party SDK</a>,\ncompatible with Wix's product requirements.",
+  "create": "Don't have an<br/>account? <strong><a href=\"#\" target=\"_blank\">Create one</a></strong>",
+  "premium": "Premium features",
+  "upgrade": "Upgrade",
+  "connected": "You are now connected to {{account}} account"
 }
