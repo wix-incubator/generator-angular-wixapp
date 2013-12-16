@@ -1,12 +1,14 @@
 'use strict';
 
 angular.module('appSettings', [
-    'ngRoute'
+    'ngRoute',
+    'pascalprecht.translate',
+    'wix'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $translateProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/settings/main.html',
+        templateUrl: 'views/settings.html',
         controller: 'SettingsCtrl'
       })
       .otherwise({

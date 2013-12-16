@@ -1,0 +1,4 @@
+{
+  "title": "App settings panel",
+  "connectedToPayPalText" : "You are now connected to <strong>{{account}}</strong> account."
+}
