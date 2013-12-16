@@ -38,11 +38,15 @@ WixappGenerator.prototype.app = function () {
   this.copy('app/robots.txt');
 
   this.copy('app/styles/settings.css');
+  this.copy('app/styles/app.css');
 
+  this.copy('app/scripts/app.js');
   this.copy('app/scripts/settings.js');
   this.copy('app/scripts/controllers/settings.js');
+  this.copy('app/scripts/controllers/main.js');
   this.copy('app/scripts/services/wix.js');
 
+  this.copy('app/views/app.html');
   this.copy('app/views/settings.html');
   this.copy('app/index.html');
   this.copy('app/settings.html');
