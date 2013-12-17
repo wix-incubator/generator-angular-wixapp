@@ -10,4 +10,9 @@ angular.module('wixApp')
     };
 
     $wix.addEventListener($wix.Events.SETTINGS_UPDATED, $scope.handleEvent);
+
+    if ($wix.Utils.getViewMode() != 'standalone') {
+      $scope.instanceId = $wix.Utils.getInstanceId();
+      $scope.instance = $wix.Utils.getInstance();
+    }
   });
