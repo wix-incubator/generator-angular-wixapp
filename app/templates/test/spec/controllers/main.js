@@ -9,6 +9,10 @@ describe('Controller: MainCtrl', function () {
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
     var wix = {};
+    wix.Utils = jasmine.createSpyObj('utils', ['getInstanceId', 'getInstance']);
+    wix.Events = {
+      SETTINGS_UPDATED: "updated"
+    }
     $controller('MainCtrl', {$scope: scope, $wix: wix});
   }));
 

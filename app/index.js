@@ -35,6 +35,7 @@ WixappGenerator.prototype.app = function () {
   this.template('_bower.json', 'bower.json');
 
   this.copy('jshintrc', '.jshintrc');
+  this.copy('jshintrc', 'test/.jshintrc');
   this.copy('gitattributes', '.gitattributes');
   this.copy('bowerrc', '.bowerrc');
 
