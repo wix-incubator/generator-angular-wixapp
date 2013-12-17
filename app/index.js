@@ -26,6 +26,9 @@ WixappGenerator.prototype.app = function () {
   this.mkdir('app/translations');
   this.mkdir('app/scripts/controllers');
   this.mkdir('app/scripts/services');
+  this.mkdir('test');
+  this.mkdir('test/spec');
+  this.mkdir('test/spec/controllers');
 
   this.template('Gruntfile.js', 'Gruntfile.js');
   this.template('_package.json', 'package.json');
@@ -54,4 +57,7 @@ WixappGenerator.prototype.app = function () {
   this.copy('app/translations/settings_en.json');
 
   this.copy('app/images/wix_icon.png');
+
+  this.copy('test/karma.conf.js');
+  this.copy('test/spec/controllers/main.js');
 };
