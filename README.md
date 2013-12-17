@@ -1,7 +1,8 @@
-# Angularjs Wix application generator
+# Yeoman Wix application generator
 
 A generator for [Yeoman](http://yeoman.io).
-Wix application [develpment guide](http://dev.wix.com/docs).
+
+Read more about wix application development in [develpment guide](http://dev.wix.com/docs).
 
 ## Getting Started
 
@@ -31,7 +32,7 @@ After app is generated run:
 $ grunt serve
 ```
 
-Now you should see the app in your broser at http://localhost:9000
+Now you should see the app in your broser at [http://localhost:9000](http://localhost:9000)
 
 Other available grunt commands:
 

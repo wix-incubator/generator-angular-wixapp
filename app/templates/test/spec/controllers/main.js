@@ -8,17 +8,19 @@ describe('Controller: MainCtrl', function () {
 
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    var wix = {};
-    wix.Utils = jasmine.createSpyObj('utils', ['getInstanceId', 'getInstance']);
+    var wix = {
+      addEventListener: function() {}
+    };
+    wix.Utils = jasmine.createSpyObj('utils', ['getInstanceId', 'getInstance', 'getViewMode']);
     wix.Events = {
       SETTINGS_UPDATED: 'updated'
     }
     $controller('MainCtrl', {$scope: scope, $wix: wix});
   }));
 
-  it('should listen to settings panel updates', function() {
-  });
-
   it('should update the message when event occurs', function() {
+    expect(scope.message).toBeUndefined();
+    scope.handleEvent('message');
+    expect(scope.message).toEqual('message');
   });
 });
