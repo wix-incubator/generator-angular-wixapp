@@ -4,6 +4,13 @@ A generator for [Yeoman](http://yeoman.io).
 
 Read more about wix application development in [develpment guide](http://dev.wix.com/docs).
 
+## Features
+
+* Included official Wix [UI lib](https://github.com/wix/wix-ui-lib) with demo settings panel
+* Translatable settings panel
+* Demo implementation of settings panel and app communication
+* [Wix SDK](http://dev.wix.com/docs/display/DRAF/JavaScript+SDK) included as a service
+
 ## Getting Started
 
 Install yeoman:
