@@ -98,13 +98,13 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '<%%= yeoman.app %>/scripts/{,*/}*.js'
-      ],
-      test: {
-        options: {
-          jshintrc: 'test/.jshintrc'
-        },
-        src: ['test/spec/{,*/}*.js']
-      }
+      ]
+//      test: {
+//        options: {
+//          jshintrc: 'test/.jshintrc'
+//        },
+//        src: ['test/spec/{,*/}*.js']
+//      }
     },
 
     // Empties folders to start fresh
@@ -275,8 +275,8 @@ module.exports = function (grunt) {
       dist: [
         'copy:styles',
         'imagemin',
-        'svgmin',
-        'htmlmin'
+        'svgmin'
+//        'htmlmin'
       ]
     },
 
@@ -330,8 +330,6 @@ module.exports = function (grunt) {
     ]);
   });
 
-
-
   grunt.registerTask('test', [
     'clean:server',
     'concurrent:test',
@@ -357,7 +355,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-    'test',
+//    'test',
     'build'
   ]);
 };

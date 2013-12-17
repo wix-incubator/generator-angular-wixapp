@@ -9,13 +9,13 @@ Read more about wix application development in [develpment guide](http://dev.wix
 Install yeoman:
 
 ```
-$ npm install -g yo
+$ sudo npm install -g yo
 ```
 
 To install generator-angular-wixapp from npm, run:
 
 ```
-$ npm install -g generator-angular-wixapp
+$ sudo npm install -g generator-angular-wixapp
 ```
 
 Finally, initiate the generator:
@@ -32,7 +32,7 @@ After app is generated run:
 $ grunt serve
 ```
 
-Now you should see the app in your broser at [http://localhost:9000](http://localhost:9000)
+Now you should see the app in your browser at [http://localhost:9000](http://localhost:9000)
 
 Other available grunt commands:
 

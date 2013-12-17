@@ -26,6 +26,9 @@
     "load-grunt-tasks": "~0.2.0",
     "time-grunt": "~0.2.0",
     "jshint-stylish": "~0.1.3",
+    "grunt-ngmin": "~0.0.2",
+
+    "grunt-google-cdn": "https://github.com/passy/grunt-google-cdn/tarball/master",
 
     "karma-ng-scenario": "~0.1.0",
     "grunt-karma": "~0.6.2",
