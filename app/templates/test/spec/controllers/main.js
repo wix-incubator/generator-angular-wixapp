@@ -11,7 +11,7 @@ describe('Controller: MainCtrl', function () {
     var wix = {};
     wix.Utils = jasmine.createSpyObj('utils', ['getInstanceId', 'getInstance']);
     wix.Events = {
-      SETTINGS_UPDATED: "updated"
+      SETTINGS_UPDATED: 'updated'
     }
     $controller('MainCtrl', {$scope: scope, $wix: wix});
   }));
