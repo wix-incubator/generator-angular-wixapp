@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-wixapp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Yeoman generator for AngularJS based Wix.com App Market application",
   "keywords": [
     "yeoman-generator",
