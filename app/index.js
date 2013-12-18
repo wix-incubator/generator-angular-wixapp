@@ -16,6 +16,21 @@ var WixappGenerator = module.exports = function WixappGenerator(args, options, c
 
 util.inherits(WixappGenerator, yeoman.generators.Base);
 
+WixappGenerator.prototype.askForCompass = function askForCompass() {
+  var cb = this.async();
+
+  this.prompt([{
+    type: 'confirm',
+    name: 'compass',
+    message: 'Would you like to use Sass (with Compass)?',
+    default: true
+  }], function (props) {
+    this.compass = props.compass;
+
+    cb();
+  }.bind(this));
+};
+
 WixappGenerator.prototype.app = function () {
   this.mkdir('app');
   this.mkdir('test');
