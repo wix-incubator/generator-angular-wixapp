@@ -16,6 +16,10 @@ var WixappGenerator = module.exports = function WixappGenerator(args, options, c
 
 util.inherits(WixappGenerator, yeoman.generators.Base);
 
+WixappGenerator.prototype.welcome = function welcome() {
+    console.log("Welcome to Wix.com App Market application generator!\n");
+}
+
 WixappGenerator.prototype.askForCompass = function askForCompass() {
   var cb = this.async();
 
