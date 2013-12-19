@@ -57,8 +57,8 @@ WixappGenerator.prototype.app = function () {
   this.copy('app/robots.txt');
 
   if (this.compass) {
-    this.copy('app/styles/settings.scss');
-    this.copy('app/styles/app.scss');
+    this.copy('app/styles/settings.css', 'app/styles/settings.scss');
+    this.copy('app/styles/app.css', 'app/styles/app.scss');
   } else {
     this.copy('app/styles/settings.css');
     this.copy('app/styles/app.css');
