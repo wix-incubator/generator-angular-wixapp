@@ -56,6 +56,7 @@ WixappGenerator.prototype.app = function () {
   this.copy('jshintrc', '.jshintrc');
   this.copy('jshintrc', 'test/.jshintrc');
   this.copy('gitattributes', '.gitattributes');
+  this.copy('gitignore', '.gitignore');
   this.copy('bowerrc', '.bowerrc');
 
   this.copy('app/robots.txt');

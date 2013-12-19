@@ -1,0 +1,15 @@
+node_modules
+dist
+.tmp
+.sass-cache
+app/bower_components
+test/coverage
+app/scripts/config.js
+.idea
+
+*.swp
+.DS_Store
+
+# Emacs temporary files
+.#*
+*#$
