@@ -22,8 +22,8 @@ WixappGenerator.prototype.askForCompass = function askForCompass() {
   this.prompt([{
     type: 'confirm',
     name: 'compass',
-    message: 'Would you like to use Sass (with Compass)?',
-    default: true
+    message: 'Would you like to use Sass? (In order to use Sass you have to install compass first: http://compass-style.org/install/)',
+    default: false
   }], function (props) {
     this.compass = props.compass;
 
