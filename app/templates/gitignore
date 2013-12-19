@@ -6,6 +6,7 @@ app/bower_components
 test/coverage
 app/scripts/config.js
 .idea
+*.iml
 
 *.swp
 .DS_Store

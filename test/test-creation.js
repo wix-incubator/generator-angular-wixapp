@@ -43,7 +43,7 @@ describe('wixapp generator', function () {
     var expected = [
       '.jshintrc',
       '.gitattributes',
-      '.gitignore',
+      ['.gitignore', /node_modules/],
       'app/styles/app.css',
       'app/styles/settings.css'
     ];
