@@ -28,8 +28,26 @@ describe('wixapp generator', function () {
       '.gitattributes',
       '.gitignore',
       'Gruntfile.js',
+      'package.json',
+      'bower.json',
+      'test/.jshintrc',
+      '.bowerrc',
+      'app/robots.txt',
       'app/styles/app.scss',
-      'app/styles/settings.scss'
+      'app/styles/settings.scss',
+      'app/scripts/app.js',
+      'app/scripts/settings.js',
+      'app/scripts/controllers/settings.js',
+      'app/scripts/controllers/main.js',
+      'app/scripts/services/wix.js',
+      'app/views/app.html',
+      'app/views/settings.html',
+      'app/index.html',
+      'app/settings.html',
+      'app/translations/settings_en.json',
+      'app/images/wix_icon.png',
+      'test/karma.conf.js',
+      'test/spec/controllers/main.js'
     ];
 
     helpers.mockPrompt(this.app, {
@@ -63,7 +81,7 @@ describe('wixapp generator', function () {
     this.app.run({}, function () {
       helpers.assertFiles(expected);
 
-      var pkg = JSON.parse(fs.readFileSync(path.join(testpath, 'package.json')), 'utf8');
+      var pkg = JSON.parse(fs.readFileSync(path.join(testpath, 'package.json'), 'utf8'));
       done();
     });
   });
