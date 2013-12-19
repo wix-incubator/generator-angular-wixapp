@@ -2,12 +2,15 @@
 'use strict';
 
 var path = require('path');
+var fs = require('fs');
 var helpers = require('yeoman-generator').test;
 
 
 describe('wixapp generator', function () {
+  var testpath = path.join(__dirname, 'temp');
+
   beforeEach(function (done) {
-    helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
+    helpers.testDirectory(testpath, function (err) {
       if (err) {
         return done(err);
       }
@@ -24,6 +27,7 @@ describe('wixapp generator', function () {
       '.jshintrc',
       '.gitattributes',
       '.gitignore',
+      'Gruntfile.js',
       'app/styles/app.scss',
       'app/styles/settings.scss'
     ];
@@ -35,6 +39,8 @@ describe('wixapp generator', function () {
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
       helpers.assertFiles(expected);
+
+      var pkg = JSON.parse(fs.readFileSync(path.join(testpath, 'package.json')), 'utf8');
       done();
     });
   });
@@ -43,6 +49,7 @@ describe('wixapp generator', function () {
     var expected = [
       '.jshintrc',
       '.gitattributes',
+      'Gruntfile.js',
       ['.gitignore', /node_modules/],
       'app/styles/app.css',
       'app/styles/settings.css'
@@ -55,6 +62,8 @@ describe('wixapp generator', function () {
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
       helpers.assertFiles(expected);
+
+      var pkg = JSON.parse(fs.readFileSync(path.join(testpath, 'package.json')), 'utf8');
       done();
     });
   });
