@@ -12,7 +12,7 @@ describe('wixapp generator', function () {
                 return done(err);
             }
 
-            this.app = helpers.createGenerator('wixapp:app', [
+            this.app = helpers.createGenerator('angular-wixapp:app', [
                 '../../app'
             ]);
             done();
@@ -23,7 +23,7 @@ describe('wixapp generator', function () {
         var expected = [
             // add files you expect to exist here.
             '.jshintrc',
-            '.editorconfig'
+            '.gitattributes'
         ];
 
         helpers.mockPrompt(this.app, {
