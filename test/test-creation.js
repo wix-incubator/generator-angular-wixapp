@@ -27,8 +27,8 @@ describe('wixapp generator', function () {
       '.jshintrc',
       '.gitattributes',
       '.gitignore',
-      'Gruntfile.js',
-      'package.json',
+      ['Gruntfile.js', /compass/],
+      ['package.json', /compass/],
       'bower.json',
       'test/.jshintrc',
       '.bowerrc',
@@ -67,7 +67,8 @@ describe('wixapp generator', function () {
     var expected = [
       '.jshintrc',
       '.gitattributes',
-      'Gruntfile.js',
+      ['Gruntfile.js', /(?!compass)/],
+      ['package.json', /(?!compass)/],
       ['.gitignore', /node_modules/],
       'app/styles/app.css',
       'app/styles/settings.css'
