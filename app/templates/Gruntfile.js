@@ -26,6 +26,9 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
+//      options: {
+//        nospawn: true // this option makes recompilation faster, but more unreliable
+//      },
       js: {
         files: ['{.tmp,<%%= yeoman.app %>}/scripts/{,*/}*.js'],
         tasks: ['newer:jshint:all']
