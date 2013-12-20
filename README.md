@@ -6,8 +6,8 @@ Read more about wix application development in [develpment guide](http://dev.wix
 
 ## Features
 
-* Official Wix [UI Lib](https://github.com/wix/wix-ui-lib) with demo settings panel
-* Translations for settings panel
+* Using official Wix [UI Lib](https://github.com/wix/wix-ui-lib) with demo settings panel
+* Translatable settings panel
 * Demo implementation of settings panel and app communication
 * Choose to use SASS or CSS
 * [Wix SDK](http://dev.wix.com/docs/display/DRAF/JavaScript+SDK) included as a service
