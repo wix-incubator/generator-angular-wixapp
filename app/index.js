@@ -3,6 +3,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var chalk = require('chalk');
 
 var WixappGenerator = module.exports = function WixappGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
@@ -17,7 +18,8 @@ var WixappGenerator = module.exports = function WixappGenerator(args, options, c
 util.inherits(WixappGenerator, yeoman.generators.Base);
 
 WixappGenerator.prototype.welcome = function welcome() {
-    console.log("Welcome to Wix.com App Market application generator!\n");
+  console.log('Welcome to ' + chalk.bold.yellow('Wix.com App Market') + ' application generator!\n');
+  console.log(chalk.bold.yellow('Note: ') + 'In order to use Sass you have to install compass: ' + chalk.blue('http://compass-style.org/install/') + '\n');
 }
 
 WixappGenerator.prototype.askForCompass = function askForCompass() {
@@ -26,7 +28,7 @@ WixappGenerator.prototype.askForCompass = function askForCompass() {
   this.prompt([{
     type: 'confirm',
     name: 'compass',
-    message: 'Would you like to use Sass? (In order to use Sass you have to install compass first: http://compass-style.org/install/)',
+    message: 'Would you like to use Sass? ',
     default: false
   }], function (props) {
     this.compass = props.compass;

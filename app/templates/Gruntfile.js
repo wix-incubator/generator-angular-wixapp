@@ -8,6 +8,7 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
+  var testSingle = false;
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
@@ -353,9 +354,13 @@ module.exports = function (grunt) {
 
     // Test settings
     karma: {
-      unit: {
+      server: {
         configFile: 'test/karma.conf.js',
         singleRun: false
+      },
+      singlerun: {
+        configFile: 'test/karma.conf.js',
+        singleRun: true
       }
     }
   });
@@ -375,13 +380,25 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'concurrent:test',
-    'autoprefixer',
-    'connect:test',
-    'karma'
-  ]);
+  grunt.registerTask('test', function (target) {
+    if (target === 'deploy') {
+      grunt.task.run([
+        'clean:server',
+        'concurrent:test',
+        'autoprefixer',
+        'connect:test',
+        'karma:singlerun'
+      ]);
+    } else {
+      grunt.task.run([
+        'clean:server',
+        'concurrent:test',
+        'autoprefixer',
+        'connect:test',
+        'karma:server'
+      ]);
+    }
+  });
 
   grunt.registerTask('build', [
     'clean:dist',
@@ -401,7 +418,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-//    'test',
+    'test:deploy',
     'build'
   ]);
 };
