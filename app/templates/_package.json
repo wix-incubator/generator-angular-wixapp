@@ -14,7 +14,7 @@
     "grunt-contrib-concat": "~0.3.0",
 
     "grunt-usemin": "~2.0.0",
-    "grunt-google-cdn": "https://github.com/passy/grunt-google-cdn/tarball/upgrade-0.2",
+    "grunt-google-cdn": "~0.4.0",
     "grunt-contrib-htmlmin": "~0.1.3",
 
     "grunt-ngmin": "~0.0.2",
