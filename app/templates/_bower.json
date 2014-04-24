@@ -7,7 +7,7 @@
     "angular-route": "~1.2.0",
 
     "jquery": "~1.9.1",
-    "wix-ui-lib": "~2.0.4",
+    "wix-ui-lib2": "~2.1.4",
 
     "json3": "~3.2.4",
     "es5-shim": "~2.1.0",
