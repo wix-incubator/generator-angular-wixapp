@@ -1,3 +1,3 @@
-* e2e test setup
-* grunt -> gulp
+* e2e tests setup
+? grunt -> gulp
 
