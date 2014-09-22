@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-wixapp",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Yeoman generator for AngularJS based Wix.com App Market application",
   "keywords": [
     "yeoman-generator",
@@ -24,19 +24,19 @@
     "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.13.0",
-    "chalk": "~0.4.0"
+    "yeoman-generator": "~0.17.0",
+    "chalk": "~0.5.0"
   },
   "devDependencies": {
-    "mocha": "~1.14.0"
+    "mocha": "~1.21.0"
   },
   "peerDependencies": {
     "yo": ">=1.0.0",
-    "generator-karma": "~0.6.0",
-    "generator-angular": "~0.6.0"
+    "generator-karma": "~0.9.0",
+    "generator-angular": "~0.8.0"
   },
   "engines": {
-    "node": ">=0.8.0",
+    "node": ">=0.10.0",
     "npm": ">=1.2.10"
   },
   "licenses": [
