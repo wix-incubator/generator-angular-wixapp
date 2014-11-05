@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-wixapp",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Yeoman generator for AngularJS based Wix.com App Market application",
   "keywords": [
     "yeoman-generator",
@@ -9,8 +9,8 @@
     "application",
     "front-end"
   ],
-  "homepage": "https://github.com/tautvilas/generator-angular-wixapp",
-  "bugs": "https://github.com/tautvilas/generator-angular-wixapp/issues",
+  "homepage": "https://github.com/wix/generator-angular-wixapp",
+  "bugs": "https://github.com/wix/generator-angular-wixapp/issues",
   "author": {
     "name": "Tautvilas",
     "url": "https://github.com/tautvilas"
@@ -18,7 +18,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tautvilas/generator-angular-wixapp.git"
+    "url": "git://github.com/wix/generator-angular-wixapp.git"
   },
   "scripts": {
     "test": "mocha"
