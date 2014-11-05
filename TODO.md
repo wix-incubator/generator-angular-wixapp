@@ -1,3 +1,3 @@
-* e2e tests setup
-? grunt -> gulp
-
+- [ ] e2e tests setup
+- [ ] grunt -> gulp
+- [ ] Please do not use the $ or $$ prefix in your code. (To prevent accidental name collisions with your code, Angular prefixes names of public objects with $ and names of private objects with $$). (link https://docs.angularjs.org/api).
