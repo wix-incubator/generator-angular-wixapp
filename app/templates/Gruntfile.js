@@ -108,12 +108,6 @@ module.exports = function (grunt) {
         'Gruntfile.js',
         '<%%= yeoman.app %>/scripts/{,*/}*.js'
       ]
-//      test: {
-//        options: {
-//          jshintrc: 'test/.jshintrc'
-//        },
-//        src: ['test/spec/{,*/}*.js']
-//      }
     },
 
     // Empties folders to start fresh
@@ -130,8 +124,7 @@ module.exports = function (grunt) {
           }
         ]
       },
-      server: '.tmp',
-      components: '<%%= yeoman.dist %>/bower_components'
+      server: '.tmp'
     },
 
     // Add vendor prefixed styles
@@ -253,13 +246,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Replace Google CDN references
-    cdnify: {
-      dist: {
-        html: ['<%%= yeoman.dist %>/*.html']
-      }
-    },
-
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -319,37 +305,8 @@ module.exports = function (grunt) {
         //<% } else { %>
         'copy:styles'
         //<% } %>
-//        'imagemin',
-//        'svgmin'
-//        'htmlmin'
       ]
     },
-
-    // By default, your `index.html`'s <!-- Usemin block --> will take care of
-    // minification. These next options are pre-configured if you do not wish
-    // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css',
-    //         '<%%= yeoman.app %>/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%%= yeoman.dist %>/scripts/scripts.js': [
-    //         '<%%= yeoman.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
-    // concat: {
-    //   dist: {}
-    // },
 
     // Test settings
     karma: {
@@ -407,12 +364,10 @@ module.exports = function (grunt) {
     'concat',
     'ngmin',
     'copy:dist',
-    'cdnify',
     'cssmin',
     'uglify',
     'rev',
-    'usemin',
-    'clean:components'
+    'usemin'
   ]);
 
   grunt.registerTask('default', [
