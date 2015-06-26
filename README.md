@@ -55,7 +55,7 @@ Or you can run unit tests only once:
 $ grunt karma:singlerun
 ```
 
-In order to run e2e tests first you have to [https://angular.github.io/protractor/](install protractor). Then run:
+In order to run e2e tests first you have to [install protractor](https://angular.github.io/protractor/). Then run:
 
 ```
 $ protractor protractor-conf.js
