@@ -43,11 +43,29 @@ $ grunt serve
 
 Now you should see the app in your browser at [http://localhost:9000](http://localhost:9000)
 
-Other available grunt commands:
+Running unit tests server that will rerun tests on each change:
+
+```
+$ grunt test
+```
+
+Running unit tests once:
+
+```
+$ grunt karma:singlerun
+```
+
+In order to run e2e tests first you have to [https://angular.github.io/protractor/](install protractor). Then run:
+
+```
+$ grunt serve
+$ protractor protractor-conf.js
+```
+
+Building:
 
 ```
 $ grunt build
-$ grunt test
 ```
 
 ## License

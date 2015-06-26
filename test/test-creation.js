@@ -32,6 +32,7 @@ describe('wixapp generator', function () {
       'bower.json',
       'test/.jshintrc',
       '.bowerrc',
+      'protractor-conf.js',
       'app/robots.txt',
       'app/styles/app.scss',
       'app/styles/settings.scss',
@@ -47,7 +48,8 @@ describe('wixapp generator', function () {
       'app/translations/settings_en.json',
       'app/images/wix_icon.png',
       'test/karma.conf.js',
-      'test/spec/controllers/main.js'
+      'test/spec/controllers/main.js',
+      'test/e2e/sanity.js'
     ];
 
     helpers.mockPrompt(this.app, {

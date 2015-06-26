@@ -49,6 +49,7 @@ WixappGenerator.prototype.app = function () {
   this.mkdir('app/scripts/services');
   this.mkdir('test');
   this.mkdir('test/spec');
+  this.mkdir('test/e2e');
   this.mkdir('test/spec/controllers');
 
   this.template('Gruntfile.js', 'Gruntfile.js');
@@ -59,6 +60,7 @@ WixappGenerator.prototype.app = function () {
   this.copy('jshintrc', 'test/.jshintrc');
   this.copy('gitattributes', '.gitattributes');
   this.copy('gitignore', '.gitignore');
+  this.copy('protractor-conf.js', 'protractor-conf.js');
   this.copy('bowerrc', '.bowerrc');
 
   this.copy('app/robots.txt');
@@ -88,4 +90,5 @@ WixappGenerator.prototype.app = function () {
 
   this.copy('test/karma.conf.js');
   this.copy('test/spec/controllers/main.js');
+  this.copy('test/e2e/sanity.js');
 };
