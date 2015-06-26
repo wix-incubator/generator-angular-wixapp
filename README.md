@@ -1,4 +1,4 @@
-# Yeoman Wix application generator
+# Yeoman Wix Application Generator
 
 A generator for [Yeoman](http://yeoman.io).
 
@@ -7,11 +7,11 @@ Read more about wix application development in [develpment guide](http://dev.wix
 ## Features
 
 * Using official Wix [UI Lib](https://github.com/wix/wix-ui-lib) with demo settings panel
-* Translatable settings panel
-* Demo implementation of settings panel and app communication
-* Choose to use SASS or CSS
-* [Wix SDK](http://dev.wix.com/docs/display/DRAF/JavaScript+SDK) included as a service
-* App structure compatible with [AngularJS generator](https://github.com/yeoman/generator-angular) commands
+* Localized settings panel
+* Demo implementation of settings panel and app interaction
+* You can choose to use SASS instead of plain CSS
+* [Wix SDK](http://dev.wix.com/docs/sdk/) wrapped as Angular service
+* Generates sample unit and e2e tests
 
 ## Getting Started
 
@@ -43,13 +43,13 @@ $ grunt serve
 
 Now you should see the app in your browser at [http://localhost:9000](http://localhost:9000)
 
-Running unit tests server that will rerun tests on each change:
+Start unit tests server that will rerun tests on each change:
 
 ```
 $ grunt test
 ```
 
-Running unit tests once:
+Or you can run unit tests only once:
 
 ```
 $ grunt karma:singlerun
@@ -58,7 +58,6 @@ $ grunt karma:singlerun
 In order to run e2e tests first you have to [https://angular.github.io/protractor/](install protractor). Then run:
 
 ```
-$ grunt serve
 $ protractor protractor-conf.js
 ```
 
@@ -67,6 +66,8 @@ Building:
 ```
 $ grunt build
 ```
+
+This command this build your app do dist directory.
 
 ## License
 
