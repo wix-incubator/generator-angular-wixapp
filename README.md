@@ -2,7 +2,7 @@
 
 A generator for [Yeoman](http://yeoman.io).
 
-Read more about Wix application development in [official develpment guide](http://dev.wix.com/docs).
+Read more about Wix Application development in [official develpment guide](http://dev.wix.com/docs).
 
 ## Features
 
@@ -67,7 +67,7 @@ Building:
 $ grunt build
 ```
 
-This command this build your app do dist directory.
+This command will build your app do dist directory.
 
 ## License
 
