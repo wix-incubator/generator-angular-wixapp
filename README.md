@@ -2,7 +2,7 @@
 
 A generator for [Yeoman](http://yeoman.io).
 
-Read more about wix application development in [develpment guide](http://dev.wix.com/docs).
+Read more about Wix application development in [official develpment guide](http://dev.wix.com/docs).
 
 ## Features
 
