@@ -21,11 +21,14 @@
     "url": "git://github.com/wix/generator-angular-wixapp.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "yeoman-generator": "~0.18.0",
-    "chalk": "~0.5.0"
+    "chalk": "~0.5.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "mocha": "~1.21.0"
@@ -41,5 +44,6 @@
     {
       "type": "MIT"
     }
-  ]
+  ],
+  "snyk": true
 }
